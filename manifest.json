@@ -1,0 +1,23 @@
+{
+  "name": "Play List Duration",
+  "version": "1.0.0",
+  "description": "Get the duration of a YouTube play list",
+  "permissions": ["tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/duration.png",
+      "24": "assets/duration.png",
+      "32": "assets/duration.png"
+    },
+    "default_title": "My YT Bookmarks",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
